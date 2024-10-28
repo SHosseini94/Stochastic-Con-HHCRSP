@@ -120,7 +120,7 @@ if __name__=="__main__":
                             with open(f+"_delay_{}_overtime_{}_alpha_{}_ATCov_{}_ASCov_{}_distribution_{}_correlation_{}_TCov_{}_SCov_{}_{}_EVT_analysis.txt".format(delay,overtime,alpha,TCov,SCov,distribution,correlation,travel_cov,service_cov,i),"w") as file:
 
                                     file.write("\n")
-                                    file.write("Method\t"+"EVT-Approximation \n")
+                                    file.write("Method\t"+"EVT\n")
                                     file.write("NumSimulationScenario\t{} \n".format(len(scenario_normal.travel_time)))
                                     file.write("Distribution\t"+distribution + "\n")
                                     if (correlation=='yes'):
